@@ -1,0 +1,65 @@
+.button{
+  background-color: rgb(98,194,222);
+ padding:2px 10px ; 
+ border-radius: 10px;
+ color: white; 
+ cursor: pointer;
+}
+.table_heading{
+  padding: 1rem;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  /* border: 1px solid; */
+}
+td{
+  text-align: center;
+  padding: 1rem;
+  border-right: 1px solid;
+  border-bottom:1px solid;
+  width: 5rem;
+  height: 2rem;
+  
+
+}
+.table_heading-1{
+  border: none;
+  padding: 1rem;
+  border-bottom: 1px solid;
+}
+table{
+  position: relative;
+  top: 20px;
+  border: 1px solid;
+}
+tr{
+  border: 1px soliid;
+}
+#StartDate{
+  background-color:rgb(207,216,220);
+  padding: 0.5rem;
+}
+#EndDate{
+  background-color:rgb(207,216,220);
+  padding: 0.5rem;
+}
+#Excluded{
+  background-color:rgb(207,216,220);
+  padding: 0.5rem;
+}
+input{
+  text-align: center;
+}
+#notice{
+ 
+  color: red;
+}
+#cancel{
+  background-color: red;
+  margin-top: 10px;
+  color: white;
+}
+#submit{
+  background-color: green;
+  color: white;
+}
+

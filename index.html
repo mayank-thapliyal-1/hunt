@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <span class="button">Add New</span>
+      <table>
+        <thead>
+          <tr>
+            <th class="table_heading">action</th>
+            <th class="table_heading">ID</th>
+            <th class="table_heading">Start Date</th>
+            <th class="table_heading">End Date</th>
+            <th class="table_heading">Month,year</th>
+            <th class="table_heading">Date Excluded</th>
+            <th class="table_heading">Number of Days</th>
+            <th class="table_heading">Lead Count</th>
+            <th class="table_heading">Expected DRR</th>
+            <th class="table_heading-1">Latest Updated</th>
+          </tr>
+        </thead>
+        <tbody id="TableData">
+          <td>N/A</td>
+          <td>N/A</td>
+          <td><input type="date" id="StartDate" class="inputField" /></td>
+          <td>
+            <input type="date" id="EndDate" class="inputField" />
+            <span id="notice"></span>
+          </td>
+          <td>
+            <span id="selected-month"></span>-<span id="selected-year"></span>
+          </td>
+          <td>
+            <input
+            type="text"
+            onclick="datapicker()"
+              id="datePicker"
+              class="inputField"
+              placeholder="select-Date"
+             />
+          </td>
+          <td id="days-counter"></td>
+          <td><input type="number" class="inputField" id="lead-count" /></td>
+          <td id="drr"></td>
+          <td>
+            <input type="submit" id="submit" onclick="updateTable()"/>
+              
+           
+            <button id="cancel" onclick="clearInputs(this)">⌀cancel</button>
+          </td>
+        </tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
